@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --brand-naranja: #FF6D09;
+    --brand-rosita: #F6445F;
+    --brand-rosado: #C5478D;
+    --brand-lila: #7E5498;
+    --brand-azul1: #415481;
+    --brand-azul2: #2F4858;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+}
+
+/* Custom Gradients */
+.bg-brand-gradient {
+  background: linear-gradient(135deg, #FF6D09 0%, #F6445F 35%, #C5478D 65%, #7E5498 100%);
+}
+
+.bg-brand-dark-gradient {
+  background: linear-gradient(135deg, #2F4858 0%, #415481 50%, #1e293b 100%);
+}
+
+.text-brand-gradient {
+  background: linear-gradient(135deg, #FF6D09 0%, #F6445F 40%, #C5478D 70%, #7E5498 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-brand-accent {
+  background: linear-gradient(135deg, #FF6D09 0%, #F6445F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-brand-gradient {
+  border-image: linear-gradient(135deg, #FF6D09, #C5478D, #7E5498) 1;
+}
+
+/* Glassmorphism utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dark .glass-panel {
+  background: rgba(30, 41, 59, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(47, 72, 88, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #FF6D09, #C5478D);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF6D09;
+}
