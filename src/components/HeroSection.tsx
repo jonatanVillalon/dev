@@ -108,26 +108,28 @@ export const HeroSection: React.FC = () => {
           </motion.div>
 
           {/* Right Image / Jonatan Avatar Card */}
+        {/* Right Image / Jonatan Avatar Card */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="lg:col-span-5 flex justify-center relative">
+            className="lg:col-span-5 flex justify-center relative"
+          >
             <div className="relative flex flex-col items-center">
-              {/* Avatar Component representing Jonatan Villalón */}
-              <div className="relative flex flex-col items-center">
               
               {/* Tu Fotografía Real */}
               <img 
                 src={miFotoPerfil} 
                 alt="Jonatan Villalón" 
-                className="w-64 h-64 sm:w-80 sm:h-80 object-cover object-center rounded-3xl shadow-2xl border-4 border-white/50 dark:border-gray-700/50 relative z-10"/>
+                className="w-64 h-64 sm:w-80 sm:h-80 object-cover object-center rounded-3xl shadow-2xl border-4 border-white/50 dark:border-gray-700/50 relative z-10"
+              />
 
               {/* Floating Badge 1: Speed Optimization */}
               <motion.div
                 animate={{ y: [0, -8, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute -top-4 -right-2 sm:-right-6 bg-white dark:bg-[#415481] p-3 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-700 flex items-center gap-2.5 z-20">
+                className="absolute -top-4 -right-2 sm:-right-6 bg-white dark:bg-[#415481] p-3 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-700 flex items-center gap-2.5 z-20"
+              >
                 <div className="w-9 h-9 rounded-xl bg-[#FF6D09]/10 flex items-center justify-center text-[#FF6D09]">
                   <Zap className="w-5 h-5 fill-[#FF6D09]" />
                 </div>
@@ -141,7 +143,8 @@ export const HeroSection: React.FC = () => {
               <motion.div
                 animate={{ y: [0, 8, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute -bottom-4 -left-2 sm:-left-6 bg-white dark:bg-[#415481] p-3 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-700 flex items-center gap-2.5 z-20">
+                className="absolute -bottom-4 -left-2 sm:-left-6 bg-white dark:bg-[#415481] p-3 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-700 flex items-center gap-2.5 z-20"
+              >
                 <div className="w-9 h-9 rounded-xl bg-[#7E5498]/10 flex items-center justify-center text-[#7E5498]">
                   <Award className="w-5 h-5" />
                 </div>
