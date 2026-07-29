@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 import { ArrowRight, Zap, Award, Globe, Code2, Server } from 'lucide-react';
 import { PROFILE_INFO } from '../data/portfolioData';
 import { JonatanAvatar } from './JonatanAvatar';
-import miFotoPerfil from '../assets/jonatanv/FotoCVNuevaRec.png';
+import miFotoPerfil from '../assets/FotoCVNuevaRec.png';
 
 export const HeroSection: React.FC = () => {
   return (
