@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { ArrowRight, Zap, Award, Globe, Code2, Server } from 'lucide-react';
 import { PROFILE_INFO } from '../data/portfolioData';
 import { JonatanAvatar } from './JonatanAvatar';
+import miFotoPerfil from '../assets/jonatanv/FotoCVNuevaRec.png';
 
 export const HeroSection: React.FC = () => {
   return (
@@ -115,7 +116,14 @@ export const HeroSection: React.FC = () => {
           >
             <div className="relative flex flex-col items-center">
               {/* Avatar Component representing Jonatan Villalón */}
-              <JonatanAvatar size="xl" showBadge={true} />
+              <div className="relative flex flex-col items-center">
+              
+              {/* Tu Fotografía Real */}
+              <img 
+                src={miFotoPerfil} 
+                alt="Jonatan Villalón" 
+                className="w-64 h-64 sm:w-80 sm:h-80 object-cover object-center rounded-3xl shadow-2xl border-4 border-white/50 dark:border-gray-700/50 relative z-10"
+              />
 
               {/* Floating Badge 1: Speed Optimization */}
               <motion.div
