@@ -2,9 +2,31 @@ import React from 'react';
 import { PROFILE_INFO } from '../data/portfolioData';
 import { ArrowUp, Github, Linkedin, Mail, Heart } from 'lucide-react';
 
-export const Footer: React.FC = () => {
+interface FooterProps {
+  onNavClick?: (sectionId: string) => void;
+}
+
+export const Footer: React.FC<FooterProps> = ({ onNavClick }) => {
+  const handleLinkClick = (e: React.MouseEvent, sectionId: string) => {
+    e.preventDefault();
+    if (onNavClick) {
+      onNavClick(sectionId);
+    } else {
+      const el = document.getElementById(sectionId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+  };
+
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (onNavClick) {
+      onNavClick('home');
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   return (
@@ -14,14 +36,18 @@ export const Footer: React.FC = () => {
           
           {/* Brand Info */}
           <div className="md:col-span-5 space-y-3">
-            <div className="flex items-center gap-2">
+            <a
+              href="#home"
+              onClick={(e) => handleLinkClick(e, 'home')}
+              className="flex items-center gap-2 group cursor-pointer"
+            >
               <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-[#FF6D09] to-[#F6445F] flex items-center justify-center font-bold text-white text-sm">
                 JV
               </div>
               <span className="font-black text-xl tracking-tight">
                 JONATAN<span className="text-[#FF6D09]">.</span>VILLALÓN
               </span>
-            </div>
+            </a>
             <p className="text-xs text-gray-300 max-w-sm leading-relaxed">
               Desarrollador Web Experto en WordPress, PHP 8 & E-Commerce WooCommerce con +8 años de experiencia en soluciones web de alta velocidad, WPO y diseño de interfaces.
             </p>
@@ -29,11 +55,11 @@ export const Footer: React.FC = () => {
 
           {/* Quick Links */}
           <div className="md:col-span-4 flex flex-wrap gap-4 text-xs font-semibold text-gray-300">
-            <a href="#home" className="hover:text-[#FF6D09] transition-colors">Inicio</a>
-            <a href="#about" className="hover:text-[#FF6D09] transition-colors">Acerca de Mí</a>
-            <a href="#skills" className="hover:text-[#FF6D09] transition-colors">Skills WordPress</a>
-            <a href="#portfolio" className="hover:text-[#FF6D09] transition-colors">Portafolio</a>
-            <a href="#contact" className="hover:text-[#FF6D09] transition-colors">Contacto</a>
+            <a href="#home" onClick={(e) => handleLinkClick(e, 'home')} className="hover:text-[#FF6D09] transition-colors cursor-pointer">Inicio</a>
+            <a href="#about" onClick={(e) => handleLinkClick(e, 'about')} className="hover:text-[#FF6D09] transition-colors cursor-pointer">Acerca de Mí</a>
+            <a href="#skills" onClick={(e) => handleLinkClick(e, 'skills')} className="hover:text-[#FF6D09] transition-colors cursor-pointer">Skills WordPress</a>
+            <a href="#portfolio" onClick={(e) => handleLinkClick(e, 'portfolio')} className="hover:text-[#FF6D09] transition-colors cursor-pointer">Portafolio</a>
+            <a href="#contact" onClick={(e) => handleLinkClick(e, 'contact')} className="hover:text-[#FF6D09] transition-colors cursor-pointer">Contacto</a>
           </div>
 
           {/* Socials & Back to Top */}
@@ -65,7 +91,7 @@ export const Footer: React.FC = () => {
             </a>
             <button
               onClick={scrollToTop}
-              className="p-2.5 rounded-xl bg-[#FF6D09] text-white hover:bg-[#FF6D09]/90 transition-colors shadow-md ml-2"
+              className="p-2.5 rounded-xl bg-[#FF6D09] text-white hover:bg-[#FF6D09]/90 transition-colors shadow-md ml-2 cursor-pointer"
               title="Volver arriba"
             >
               <ArrowUp className="w-4 h-4" />

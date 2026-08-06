@@ -5,12 +5,14 @@ interface NavbarProps {
   isDark: boolean;
   setIsDark: (val: boolean) => void;
   activeSection: string;
+  onNavClick?: (sectionId: string) => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
   isDark,
   setIsDark,
-  activeSection
+  activeSection,
+  onNavClick
 }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -24,12 +26,27 @@ export const Navbar: React.FC<NavbarProps> = ({
   }, []);
 
   const navLinks = [
-    { href: '#home', label: 'Inicio' },
-    { href: '#about', label: 'Acerca de Mí' },
-    { href: '#skills', label: 'Especialidad WordPress & Skills' },
-    { href: '#portfolio', label: 'Portafolio' },
-    { href: '#contact', label: 'Contacto' },
+    { id: 'home', href: '#home', label: 'Inicio' },
+    { id: 'about', href: '#about', label: 'Acerca de Mí' },
+    { id: 'skills', href: '#skills', label: 'Especialidad WordPress & Skills' },
+    { id: 'portfolio', href: '#portfolio', label: 'Portafolio' },
+    { id: 'contact', href: '#contact', label: 'Contacto' },
   ];
+
+  const handleLinkClick = (e: React.MouseEvent, sectionId: string) => {
+    e.preventDefault();
+    setMobileMenuOpen(false);
+    if (onNavClick) {
+      onNavClick(sectionId);
+    } else {
+      const el = document.getElementById(sectionId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+  };
 
   return (
     <header
@@ -41,7 +58,11 @@ export const Navbar: React.FC<NavbarProps> = ({
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
-        <a href="#home" className="flex items-center gap-2.5 group">
+        <a
+          href="#home"
+          onClick={(e) => handleLinkClick(e, 'home')}
+          className="flex items-center gap-2.5 group cursor-pointer"
+        >
           <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#FF6D09] via-[#F6445F] to-[#7E5498] flex items-center justify-center text-white font-black text-xl shadow-md group-hover:scale-105 transition-transform">
             JV
           </div>
@@ -58,12 +79,13 @@ export const Navbar: React.FC<NavbarProps> = ({
         {/* Desktop Nav Links */}
         <nav className="hidden md:flex items-center space-x-1 lg:space-x-2">
           {navLinks.map((link) => {
-            const isActive = activeSection === link.href.replace('#', '');
+            const isActive = activeSection === link.id;
             return (
               <a
-                key={link.href}
+                key={link.id}
                 href={link.href}
-                className={`px-3.5 py-2 rounded-xl text-sm font-semibold transition-colors ${
+                onClick={(e) => handleLinkClick(e, link.id)}
+                className={`px-3.5 py-2 rounded-xl text-sm font-semibold transition-colors cursor-pointer ${
                   isActive
                     ? 'text-[#F6445F] bg-[#F6445F]/10 font-bold'
                     : 'text-[#2F4858] dark:text-gray-200 hover:text-[#FF6D09] dark:hover:text-[#FF6D09]'
@@ -81,7 +103,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <button
             onClick={() => setIsDark(!isDark)}
             aria-label="Cambiar tema"
-            className="p-2.5 rounded-xl bg-gray-100 dark:bg-[#415481]/50 text-[#2F4858] dark:text-yellow-400 hover:bg-gray-200 dark:hover:bg-[#415481] transition-colors"
+            className="p-2.5 rounded-xl bg-gray-100 dark:bg-[#415481]/50 text-[#2F4858] dark:text-yellow-400 hover:bg-gray-200 dark:hover:bg-[#415481] transition-colors cursor-pointer"
           >
             {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5 text-[#2F4858]" />}
           </button>
@@ -89,7 +111,8 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Contact CTA */}
           <a
             href="#contact"
-            className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-gradient-to-r from-[#FF6D09] to-[#F6445F] text-white font-bold text-xs shadow-md hover:shadow-lg hover:opacity-95 transition-all transform hover:-translate-y-0.5"
+            onClick={(e) => handleLinkClick(e, 'contact')}
+            className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-gradient-to-r from-[#FF6D09] to-[#F6445F] text-white font-bold text-xs shadow-md hover:shadow-lg hover:opacity-95 transition-all transform hover:-translate-y-0.5 cursor-pointer"
           >
             <span>Hablemos</span>
             <ArrowRight className="w-3.5 h-3.5" />
@@ -101,6 +124,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <button
             onClick={() => setIsDark(!isDark)}
             className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-yellow-400"
+            aria-label="Cambiar tema"
           >
             {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
           </button>
@@ -120,10 +144,10 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="flex flex-col space-y-2">
             {navLinks.map((link) => (
               <a
-                key={link.href}
+                key={link.id}
                 href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="px-3 py-2.5 rounded-lg text-base font-medium text-[#2F4858] dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-[#415481]"
+                onClick={(e) => handleLinkClick(e, link.id)}
+                className="px-3 py-2.5 rounded-lg text-base font-medium text-[#2F4858] dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-[#415481] cursor-pointer"
               >
                 {link.label}
               </a>
@@ -132,8 +156,8 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="pt-2 border-t border-gray-100 dark:border-gray-700 flex flex-col gap-2">
             <a
               href="#contact"
-              onClick={() => setMobileMenuOpen(false)}
-              className="w-full text-center py-3 rounded-xl bg-gradient-to-r from-[#FF6D09] to-[#F6445F] text-white font-bold text-sm shadow-md"
+              onClick={(e) => handleLinkClick(e, 'contact')}
+              className="w-full text-center py-3 rounded-xl bg-gradient-to-r from-[#FF6D09] to-[#F6445F] text-white font-bold text-sm shadow-md cursor-pointer"
             >
               Hablemos de tu Proyecto
             </a>

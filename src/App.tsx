@@ -38,6 +38,7 @@ export default function App() {
   // Section Observer on Scroll
   useEffect(() => {
     const handleScroll = () => {
+      if (selectedProject) return;
       const sections = ['home', 'about', 'skills', 'portfolio', 'contact'];
       const scrollPosition = window.scrollY + 200;
 
@@ -56,13 +57,29 @@ export default function App() {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [selectedProject]);
+
+  const handleNavClick = (sectionId: string) => {
+    // Clear selected project detail view first
+    setSelectedProject(null);
+
+    // Scroll smoothly to target section
+    setTimeout(() => {
+      if (sectionId === 'home') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        const el = document.getElementById(sectionId);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      }
+    }, 50);
+  };
 
   const handleOpenContact = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    handleNavClick('contact');
   };
 
   if (isLoading) {
@@ -76,6 +93,7 @@ export default function App() {
         isDark={isDark}
         setIsDark={setIsDark}
         activeSection={activeSection}
+        onNavClick={handleNavClick}
       />
 
       {/* Main Content Area */}
@@ -103,7 +121,7 @@ export default function App() {
       <FloatingWhatsApp />
 
       {/* Footer */}
-      <Footer />
+      <Footer onNavClick={handleNavClick} />
     </div>
   );
 }
