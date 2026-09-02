@@ -181,5 +181,25 @@ export const SKILLS_DATA: Skill[] = [
 
   // Frontend
   { name: 'HTML5, CSS3 & SASS / Tailwind', category: 'frontend', categoryLabel: 'Front-End Development', level: 98, yearsExperience: '8 Años', icon: 'Palette', description: 'Maquetación semántica, Flexbox, Grid, CSS para WordPress y diseño responsivo adaptativo.' },
-  { name: 'JavaScript ES6+ / React.js', category: 'frontend', categoryLabel: 'Front-End Development', level: 88, yearsExperience: '4 Años', icon: 'Atom', description: 'Interactividad dinámica, Headless WordPress API, consumo de endpoints y utilidades frontend.' }
+  { name: 'JavaScript ES6+ / React.js', category: 'frontend', categoryLabel: 'Front-End Development', level: 88, yearsExperience: '4 Años', icon: 'Atom', description: 'Interactividad dinámica, Headless WordPress API, consumo de endpoints y utilidades frontend.' },
+  // IA & Mantenimiento
+  { 
+    name: 'Mantenimiento Técnico & Soporte WP', 
+    category: 'tools', 
+    categoryLabel: 'WPO, Servidores & SEO', 
+    level: 98, 
+    yearsExperience: '8 Años', 
+    icon: 'ShieldCheck', // Asumiendo que usas Lucide Icons o similar
+    description: 'Gestión integral mensual, actualizaciones preventivas de core y plugins, copias de seguridad y monitoreo de estabilidad para sitios de alto tráfico.' 
+  },
+  { 
+    name: 'Automatización & Chatbots IA (n8n, Gemini)', 
+    category: 'backend', 
+    categoryLabel: 'Automatización & IA', 
+    level: 90, 
+    yearsExperience: '1 Año', 
+    icon: 'Bot', 
+    description: 'Creación de flujos de trabajo automatizados con n8n, despliegue de Evolution API en servidores VPS y desarrollo de chatbots personalizados para WhatsApp impulsados por la API de Gemini.', 
+    featured: true 
+  }
 ];
