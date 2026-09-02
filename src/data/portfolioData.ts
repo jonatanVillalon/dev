@@ -160,7 +160,8 @@ export const PROJECTS_DATA: Project[] = [
     liveUrl: 'https://maipumotos.mundomaipu.com.ar/',
     githubUrl: 'https://github.com/jonatanVillalon/',
     imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/maipu-motos.png',
-    client: 'Mundo Maipú - La Generatriz',
+    client: 'Mundo Maipú',
+    agencyName: 'La Generatriz',
     agencyUrl: 'https://www.lageneratriz.com.ar/',
     role: 'Desarrollo & Mantenimiento Técnico',
     year: '2022'
