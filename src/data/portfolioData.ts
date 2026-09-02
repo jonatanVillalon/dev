@@ -32,134 +32,158 @@ export const PROFILE_INFO = {
 };
 
 export const PROJECTS_DATA: Project[] = [
+   {
+    id: 'avistaje-rock',
+    title: 'Avistaje Rock',
+    subtitle: 'Sitio Web para Banda de Rock Local',
+    category: 'frontend',
+    categoryLabel: 'HTML, CSS & Bootstrap',
+    description: 'Desarrollo frontend a medida para una banda de rock local, enfocado en presencia digital y presentación de la agrupación.',
+    fullDescription: 'Maquetación web estática utilizando tecnologías fundamentales (HTML, CSS y JavaScript) combinadas con Bootstrap para asegurar la adaptabilidad en dispositivos móviles, destacando la energía visual del género musical.',
+    problem: 'La banda carecía de una plataforma oficial con una estética rockera y moderna para centralizar su información y conectar con su audiencia.',
+    solution: 'Se diseñó y maquetó una interfaz visualmente impactante y responsiva desde cero, proporcionando una identidad digital sólida.',
+    processSteps: [
+      { title: 'Diseño Visual', description: 'Definición de paleta de colores y estructura acorde a la identidad de la banda.' },
+      { title: 'Maquetación', description: 'Desarrollo estructural utilizando HTML5, CSS3 y componentes de Bootstrap.' }
+    ],
+    technologies: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap'],
+    liveUrl: 'https://jonatanvillalon.github.io/avistaje.github.io/',
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/Avistaje.png',
+    client: 'Avistaje Rock',
+    role: 'Front-End Developer',
+    year: '2016'
+  },
   {
-    id: 'comercio-y-justicia',
-    title: 'Comercio y Justicia',
-    subtitle: 'Portal WordPress de Alto Tráfico y Sistema de Capacitaciones',
+    id: 'fertilizantes-fm',
+    title: 'Fertilizantes FM',
+    subtitle: 'Web Institucional para Distribuidor Oficial',
+    category: 'frontend',
+    categoryLabel: 'HTML, CSS & Bootstrap',
+    description: 'Sitio corporativo para distribuidor de fertilizantes de Fabricaciones Militares.',
+    fullDescription: 'Plataforma web desarrollada en HTML, CSS y JS, orientada a presentar el catálogo institucional y los servicios del distribuidor, con un enfoque en la claridad de la información para el sector agroindustrial.',
+    problem: 'El cliente necesitaba presencia en internet para exhibir sus productos con un diseño limpio, profesional y accesible desde el campo vía móviles.',
+    solution: 'Creación de un sitio rápido e intuitivo estructurado con Bootstrap, resaltando los datos de contacto y detalles técnicos de los fertilizantes.',
+    processSteps: [
+      { title: 'Estructuración', description: 'Organización de la información técnica del sector agrícola.' },
+      { title: 'Desarrollo Responsive', description: 'Implementación mobile-first para garantizar acceso desde zonas rurales con baja conexión.' }
+    ],
+    technologies: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap'],
+    liveUrl: 'https://jonatanvillalon.github.io/fertilizantesfm.github.io/',
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/FertilizantesFM.png',
+    client: 'Fertilizantes FM',
+    role: 'Front-End Developer',
+    year: '2017'
+  },
+  {
+    id: 'mascioli-abogados',
+    title: 'Mascioli Abogados',
+    subtitle: 'Rediseño Institucional para Estudio Jurídico',
     category: 'wordpress',
-    categoryLabel: 'WordPress Portal & PHP',
-    description: 'Desarrollo, arquitectura PHP y mantenimiento continuo para uno de los medios periodísticos y jurídicos más importantes de Córdoba.',
-    fullDescription: 'Reestructuración integral del portal institucional de noticias en WordPress y el subdominio educativo /capacitaciones/, asegurando máxima estabilidad ante picos simultáneos de tráfico y venta de cursos online.',
-    problem: 'Saturación del sitio con miles de artículos publicados, velocidad lenta en búsquedas y falta de un módulo intuitivo para la venta de capacitaciones legales.',
-    solution: 'Desarrollo de arquitectura WordPress optimizada, Custom Post Types en PHP, pasarela de cobro local e integración con boletines automatizados.',
+    categoryLabel: 'WordPress & Elementor',
+    description: 'Modernización estética y desarrollo del sitio web corporativo para un estudio jurídico de Buenos Aires.',
+    fullDescription: 'Rediseño integral en WordPress enfocado en transmitir seriedad, confianza y profesionalismo, valores fundamentales para una firma de abogados de primer nivel.',
+    problem: 'El estudio presentaba una imagen digital desactualizada que no generaba la confianza necesaria en potenciales clientes.',
+    solution: 'Implementación de una interfaz moderna, elegante y sobria mediante Elementor Pro, optimizando la navegación hacia las áreas de práctica legal.',
     processSteps: [
-      { title: 'Auditoría & Estructura WP', description: 'Reorganización de taxonomías y base de datos MySQL para agilizar la carga de noticias.' },
-      { title: 'Custom Post Types & PHP 8', description: 'Programación de módulos de capacitaciones, docentes y suscripciones personalizadas.' },
-      { title: 'Integración MercadoPago', description: 'Inscripción y cobro automatizado para diplomaturas y cursos.' }
+      { title: 'Identidad Visual', description: 'Selección de tipografías y colores que inspiran autoridad y profesionalismo.' },
+      { title: 'Desarrollo WordPress', description: 'Construcción ágil con Elementor y optimización de formularios de consulta.' }
     ],
-    technologies: ['WordPress Custom', 'PHP 8', 'ACF Pro', 'MySQL', 'JavaScript', 'MercadoPago API', 'CSS3/SASS'],
-    liveUrl: 'https://comercioyjusticia.info',
+    technologies: ['WordPress', 'Elementor', 'CSS3'],
+    liveUrl: 'https://mascioliabogados.com.ar/',
     githubUrl: 'https://github.com/jonatanVillalon/',
-    imageUrl: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=800',
-    metrics: [
-      { label: 'Visitas Mensuales', value: '+250K' },
-      { label: 'Capacitaciones Vendidas', value: '1,200+' }
-    ],
-    client: 'Comercio y Justicia Editores',
-    role: 'WordPress Lead Developer',
-    year: '2022 - Presente',
-    featured: true
-  },
-  {
-    id: 'inversiones-andinas',
-    title: 'Inversiones Andinas',
-    subtitle: 'WPO WordPress: Reducción del 80% en Tiempos de Carga',
-    category: 'performance',
-    categoryLabel: 'WordPress WPO & SEO',
-    description: 'Optimización de velocidad y rendimiento extremo en WordPress para plataforma financiera internacional.',
-    fullDescription: 'Diagnóstico profundo WPO en WordPress, depuración de plugins y consultas a base de datos wp_options, eliminación de render-blocking assets y reconfiguración de caché a nivel servidor.',
-    problem: 'Tiempos de carga superiores a 6.2s en móviles, puntuación de 34/100 en PageSpeed y alta tasa de rebote.',
-    solution: 'Limpieza de código PHP, compresión de imágenes a WebP, eliminación de scripts innecesarios y optimización de base de datos MySQL.',
-    processSteps: [
-      { title: 'Diagnóstico PageSpeed', description: 'Auditoría detallada de Core Web Vitals, LCP y TBT.' },
-      { title: 'Depuración de Plugins & PHP', description: 'Eliminación de código innecesario y refactorización de WP_Query.' },
-      { title: 'Caché & CDN', description: 'Configuración avanzada de compresión Gzip/Brotli y CDN Cloudflare.' }
-    ],
-    technologies: ['WordPress', 'PHP 8', 'WPO Specialist', 'MySQL', 'PageSpeed Insights', 'Cloudflare'],
-    liveUrl: 'https://inversionesandinas.com',
-    githubUrl: 'https://github.com/jonatanVillalon/',
-    imageUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
-    metrics: [
-      { label: 'Reducción de Carga', value: '80%' },
-      { label: 'Score PageSpeed', value: '96 / 100' },
-      { label: 'Carga Móvil', value: '1.2s' }
-    ],
-    client: 'Inversiones Andinas S.A.',
-    role: 'WordPress Performance Expert',
-    year: '2023 - 2024',
-    featured: true
-  },
-  {
-    id: 'cortinas-artico',
-    title: 'Cortinas Ártico',
-    subtitle: 'WooCommerce & Cotizador a Medida en Tiempo Real',
-    category: 'ecommerce',
-    categoryLabel: 'WooCommerce Custom',
-    description: 'Tienda e-commerce en WordPress con cotizador automático interactivo según medidas de alto y ancho.',
-    fullDescription: 'Plataforma de comercio electrónico diseñada en WooCommerce con lógica de cálculo instantáneo en tiempo real para cotizar cortinas rollers según medidas, tipos de tela y sistemas de comando.',
-    problem: 'Saturación en líneas de WhatsApp solicitando presupuestos manuales de cortinas a medida.',
-    solution: 'Desarrollo de un plugin/script de cotización en JS integrado con el carrito de WooCommerce que calcula el precio al instante.',
-    processSteps: [
-      { title: 'Algoritmo de Cálculo', description: 'Lógica matemática de superficie m² y accesorios dinámicos.' },
-      { title: 'Catálogo WooCommerce', description: 'Configuración de atributos, productos variables y pasarelas de pago.' },
-      { title: 'Diseño Responsivo', description: 'Interfaz táctil optimizada para compra rápida desde celulares.' }
-    ],
-    technologies: ['WordPress', 'WooCommerce', 'PHP', 'JavaScript', 'ACF Pro', 'Bootstrap'],
-    liveUrl: 'https://cortinasartico.com.ar',
-    githubUrl: 'https://github.com/jonatanVillalon/',
-    imageUrl: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800',
-    metrics: [
-      { label: 'Ventas Automatizadas', value: '60%' },
-      { label: 'Ahorro Soporte', value: '15h / sem' }
-    ],
-    client: 'Ártico Soluciones del Hogar',
-    role: 'WooCommerce Architect',
-    year: '2022',
-    featured: true
-  },
-  {
-    id: 'ducati-cordoba',
-    title: 'Ducati Córdoba & Mundo Maipú',
-    subtitle: 'Catálogo de Lujo WordPress & Generador de Leag/Test Drives',
-    category: 'wordpress',
-    categoryLabel: 'WordPress Custom',
-    description: 'Sitio corporativo y catálogo de motos de alta gama para concesionario oficial Ducati en Córdoba.',
-    fullDescription: 'Desarrollo web exclusivo en WordPress para reflejar la elegancia y deportividad de la marca Ducati, incorporando fichas técnicas interactivas y agendamiento de test drives.',
-    problem: 'Necesidad de un diseño institucional de alto estándar internacional alineado a las guías de marca Ducati.',
-    solution: 'Maquetación a medida en WordPress con fichas técnicas estructuradas con ACF Pro y formularios vinculados al CRM comercial.',
-    processSteps: [
-      { title: 'Maquetación UI Premium', description: 'Paleta y tipografías oficiales de la marca Ducati.' },
-      { title: 'Fichas Técnicas ACF', description: 'Campañas personalizadas para especificaciones de cilindrada, potencia y frenos.' }
-    ],
-    technologies: ['WordPress', 'PHP', 'ACF Pro', 'CSS3 Custom', 'Google Analytics'],
-    liveUrl: 'https://ducaticordoba.com.ar',
-    githubUrl: 'https://github.com/jonatanVillalon/',
-    imageUrl: 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&q=80&w=800',
-    client: 'Mundo Maipú - Ducati Córdoba',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/Mascioli-abogados.png',
+    client: 'Estudio Jurídico Mascioli',
     role: 'WordPress Web Developer',
-    year: '2021 - 2023',
-    featured: true
+    year: '2021'
   },
   {
-    id: 'the-dubbing-method',
-    title: 'The Dubbing Method',
-    subtitle: 'Landing Page Interactiva para Academia Internacional',
-    category: 'react',
-    categoryLabel: 'React & Headless Web',
-    description: 'Experiencia web interactiva para la venta de cursos de doblaje vocal a nivel internacional.',
-    fullDescription: 'Sitio moderno con reproductor de audios de muestra, diseño inmersivo y formularios de conversión rápida para estudiantes globales.',
-    problem: 'Sitio previo anticuado que no transmitía el dinamismo de la academia.',
-    solution: 'Desarrollo de landing de alta conversión con reproductor multimedia y transiciones suaves.',
+    id: 'atp-catering',
+    title: 'ATP Catering',
+    subtitle: 'Plataforma Visual para Eventos y Gastronomía',
+    category: 'wordpress',
+    categoryLabel: 'WordPress & Divi',
+    description: 'Sitio web dinámico y apetecible para una empresa de catering y eventos de Uruguay.',
+    fullDescription: 'Desarrollo orientado a destacar la calidad visual de la gastronomía y los servicios de eventos mediante el maquetador Divi, integrando galerías de alta resolución y formularios de cotización.',
+    problem: 'La marca requería un salto de calidad estética para mostrar el nivel de sus eventos y menús de forma atractiva.',
+    solution: 'Diseño de un portal inmersivo enfocado en la fotografía de los platos, facilitando al usuario solicitar presupuestos personalizados.',
     processSteps: [
-      { title: 'Prototipado', description: 'Diseño oscuro con acentos de color atractivos.' },
-      { title: 'Desarrollo React', description: 'Componentes interactivos de audio y animaciones.' }
+      { title: 'Enfoque Visual', description: 'Priorización de galerías fotográficas de alta calidad para el rubro gastronómico.' },
+      { title: 'Construcción con Divi', description: 'Uso estratégico de animaciones sutiles y maquetación personalizada.' }
     ],
-    technologies: ['React.js', 'JavaScript ES6+', 'Tailwind CSS', 'WordPress Headless API'],
-    liveUrl: 'https://thedubbingmethod.com',
+    technologies: ['WordPress', 'Divi Theme', 'PHP'],
+    liveUrl: 'https://atpcatering.com.uy/',
     githubUrl: 'https://github.com/jonatanVillalon/',
-    imageUrl: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&q=80&w=800',
-    client: 'The Dubbing Method International',
-    role: 'Front-End UI Developer',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/atp-catering.png',
+    client: 'ATP Catering (Uruguay)',
+    role: 'WordPress Web Developer',
+    year: '2021'
+  },
+  {
+    id: 'el-puntinazo',
+    title: 'El Puntinazo',
+    subtitle: 'Portal Web para Liga de Fútbol Mixto',
+    category: 'wordpress',
+    categoryLabel: 'WordPress & Elementor',
+    description: 'Creación de plataforma digital para la organización y difusión de torneos de fútbol amateur.',
+    fullDescription: 'Un espacio digital moderno diseñado para comunicar el dinamismo y la evolución del fútbol mixto tras más de 9 años de trayectoria de la liga, construido con WordPress y Elementor.',
+    problem: 'La liga necesitaba modernizar su comunicación visual y tener un portal vibrante que transmitiera el lema "Jugá como amateur, sentite profesional".',
+    solution: 'Diseño de una interfaz deportiva, con una paleta de colores enérgica y una estructura clara para visualizar noticias, torneos y equipos.',
+    processSteps: [
+      { title: 'Concepto Deportivo', description: 'Diseño de UI enfocado en el dinamismo y la identidad del fútbol.' },
+      { title: 'Desarrollo en WordPress', description: 'Integración de contenido gestionable para mantener la liga actualizada.' }
+    ],
+    technologies: ['WordPress', 'Elementor', 'PHP'],
+    liveUrl: '',
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/el-puntinazo.png',
+    client: 'Liga El Puntinazo',
+    role: 'WordPress Web Developer',
+    year: '2022'
+  },
+  {
+    id: 'maipu-motos',
+    title: 'Maipú Motos',
+    subtitle: 'Tienda Online para Concesionario Oficial',
+    category: 'ecommerce',
+    categoryLabel: 'WooCommerce & WordPress',
+    description: 'Desarrollo de e-commerce y catálogo digital para la división de motos de Mundo Maipú.',
+    fullDescription: 'Tienda construida sobre WordPress y WooCommerce para exhibir de manera estructurada y estética el inventario de motocicletas, incorporando un entorno seguro e intuitivo para la navegación del usuario.',
+    problem: 'Era fundamental renovar la estética anticuada del catálogo y transformarlo en un showroom digital moderno que facilitara la experiencia de búsqueda.',
+    solution: 'Se implementó un rediseño UI/UX completo junto a WooCommerce y Elementor, mejorando radicalmente la presentación visual de los vehículos.',
+    processSteps: [
+      { title: 'Reestructuración UI/UX', description: 'Mejora en la visualización del catálogo y filtros de búsqueda.' },
+      { title: 'Integración E-commerce', description: 'Configuración técnica con WooCommerce para exhibición de vehículos.' }
+    ],
+    technologies: ['WordPress', 'WooCommerce', 'Elementor', 'PHP'],
+    liveUrl: 'https://maipumotos.mundomaipu.com.ar/',
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/maipu-motos.png',
+    client: 'Mundo Maipú - La Generatriz',
+    role: 'Desarrollo & Mantenimiento Técnico',
+    year: '2022'
+  },
+  {
+    id: 'emisolve',
+    title: 'Emisolve',
+    subtitle: 'Sitio Web Corporativo Sustentable',
+    category: 'wordpress',
+    categoryLabel: 'WordPress & Elementor',
+    description: 'Desarrollo institucional para compañía chilena especializada en Compensación de Emisiones.',
+    fullDescription: 'Creación de un portal B2B diseñado en WordPress con Elementor Pro, enfocado en comunicar de manera limpia, moderna y ecológica los programas de sustentabilidad (PCE) para empresas.',
+    problem: 'Se requería un diseño estético que inspirara compromiso ambiental y estuviera a la altura del mercado corporativo de Chile, dejando atrás una identidad digital genérica.',
+    solution: 'Desarrollo de una interfaz minimalista, con una paleta de colores ligada a la sustentabilidad y animaciones sutiles para guiar la lectura de los programas.',
+    processSteps: [
+      { title: 'Branding Digital', description: 'Traducción de los valores ecológicos de la marca a componentes web.' },
+      { title: 'Implementación WordPress', description: 'Maquetación pixel-perfect utilizando Elementor Pro.' }
+    ],
+    technologies: ['WordPress', 'Elementor Pro', 'CSS3'],
+    liveUrl: 'https://emisolve.cl/',
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/emisolve.png',
+    client: 'Emisolve (Chile)',
+    role: 'WordPress Web Developer',
     year: '2023'
   }
 ];
