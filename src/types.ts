@@ -9,7 +9,7 @@ export interface Project {
   id: string;
   title: string;
   subtitle: string;
-  category: 'wordpress' | 'react' | 'ecommerce' | 'performance';
+  category: 'wordpress' | 'react' | 'ecommerce' | 'performance' | 'ai' | 'maintenance';
   categoryLabel: string;
   description: string;
   fullDescription: string;
