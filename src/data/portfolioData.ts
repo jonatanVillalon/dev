@@ -507,6 +507,168 @@ export const PROJECTS_DATA: Project[] = [
     client: 'Proyecto Propio / Automatizaciones',
     role: 'AI & Automation Developer',
     year: '2026'
+  },
+  {
+    id: 'comercio-y-justicia',
+    title: 'Comercio y Justicia',
+    subtitle: 'Portal de Noticias Jurídicas y Económicas',
+    category: ['wordpress', 'maintenance'],
+    categoryLabel: 'WordPress Portal & Medios',
+    description: 'Rediseño completo y migración de portal periodístico de alto tráfico de WPBakery a Elementor Pro.',
+    fullDescription: 'Modernización estructural del diario judicial y comercial líder de Córdoba. Implementación de suscripciones con MemberPress, anuncios con Advanced Ads y campos dinámicos ACF.',
+    problem: 'Plataforma desactualizada sobre WPBakery con dificultades de maquetación, sobrecarga de estilos y gestión rígida de suscripciones.',
+    solution: 'Migración integral a Elementor Pro con arquitectura modular JNews, integración de paywall con MemberPress y gestión de publicidad optimizada.',
+    processSteps: [
+      { title: 'Migración de Maquetador', description: 'Reconstrucción de layouts de noticias desde WPBakery hacia Elementor Pro.' },
+      { title: 'Suscripciones y Monetización', description: 'Implementación de MemberPress y gestión de pautas publicitarias dinámicas.' }
+    ],
+    technologies: ['WordPress', 'Elementor Pro', 'JNews', 'MemberPress', 'Advanced Ads', 'ACF', 'PHP'],
+    liveUrl: 'https://comercioyjusticia.info/',
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/Comercioyjusticia.png',
+    client: 'Comercio y Justicia',
+    agencyName: 'La Generatriz',
+    agencyUrl: 'https://www.lageneratriz.com.ar/',
+    role: 'WordPress Web Developer & Mantenimiento',
+    year: '2023'
+  },
+  {
+    id: 'comercio-justicia-capacitaciones',
+    title: 'Comercio y Justicia - Capacitaciones',
+    subtitle: 'Plataforma E-Learning de Cursos Jurídicos',
+    category: ['wordpress', 'ecommerce'],
+    categoryLabel: 'LearnDash & WooCommerce',
+    description: 'Micrositio educativo enfocado en la venta de cursos, diplomaturas y capacitaciones online.',
+    fullDescription: 'Desarrollo de plataforma LMS integrada con LearnDash y WooCommerce, incorporando filtrado dinámico mediante FacetWP para explorar el catálogo académico.',
+    problem: 'Falta de un entorno ordenado para comercializar cursos especializados con filtros por área del derecho y cobro online directo.',
+    solution: 'Implementación de sistema e-learning robusto combinando LearnDash con WooCommerce y grillas interactivas con FacetWP.',
+    processSteps: [
+      { title: 'Arquitectura LMS', description: 'Configuración de trayectos formativos, lecciones y certificados en LearnDash.' },
+      { title: 'Filtros Dinámicos', description: 'Desarrollo de grilla de cursos con FacetWP para búsqueda ágil.' }
+    ],
+    technologies: ['WordPress', 'LearnDash', 'WooCommerce', 'FacetWP', 'PHP'],
+    liveUrl: 'https://comercioyjusticia.info/capacitaciones/',
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/comercioyjusticia-capacitaciones.jpeg',
+    client: 'Comercio y Justicia',
+    agencyName: 'La Generatriz',
+    agencyUrl: 'https://www.lageneratriz.com.ar/',
+    role: 'WordPress Web Developer & Mantenimiento',
+    year: '2023'
+  },
+  {
+    id: 'comercio-justicia-semanario-juridico',
+    title: 'Semanario Jurídico',
+    subtitle: 'Portal Especializado en Jurisprudencia y Fallos',
+    category: ['wordpress', 'maintenance'],
+    categoryLabel: 'WordPress & Jurisprudencia',
+    description: 'Micrositio periodístico técnico con resoluciones de cámara, doctrina y notas para abogados y jueces.',
+    fullDescription: 'Portal de consulta jurídica especializada desarrollado con WordPress y grillas indexadas con FacetWP para localizar rápidamente fallos, sentencias y artículos doctrinales.',
+    problem: 'Dificultad para organizar un gran volumen de resoluciones y fallos judiciales de forma indexada y accesible para profesionales del derecho.',
+    solution: 'Estructuración de taxonomías legales y catálogo dinámico con FacetWP para filtrado instantáneo por fuero y tribunal.',
+    processSteps: [
+      { title: 'Modelado Documental', description: 'Creación de estructura de metadatos para resoluciones y doctrina jurídica.' },
+      { title: 'Grilla Facetada', description: 'Configuración de FacetWP para búsquedas por parámetros judiciales específicos.' }
+    ],
+    technologies: ['WordPress', 'FacetWP', 'Elementor Pro', 'ACF', 'PHP'],
+    liveUrl: 'https://comercioyjusticia.info/semanario-juridico/',
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/Comercioyjusticia-semanariojuridico.png',
+    client: 'Comercio y Justicia',
+    agencyName: 'La Generatriz',
+    agencyUrl: 'https://www.lageneratriz.com.ar/',
+    role: 'WordPress Web Developer & Mantenimiento',
+    year: '2023'
+  },
+  {
+    id: 'inversiones-andinas',
+    title: 'Inversiones Andinas',
+    subtitle: 'Plataforma Financiera & Calculadora de Cauciones',
+    category: ['wordpress', 'performance', 'maintenance'],
+    categoryLabel: 'WordPress & Integraciones API',
+    description: 'Desarrollo corporativo financiero siguiendo diseño en Figma, con Zoho CRM, API Google y calculadoras.',
+    fullDescription: 'Portal institucional desarrollado con Elementor Pro a partir de diseño en Figma. Cuenta con integración de Zoho vía scripts custom, API de Google para login en formularios y calculadora de rendimientos.',
+    problem: 'Necesidad de traducir un diseño Figma de alta fidelidad e interconectar herramientas financieras de cotización y captación de leads en un solo ecosistema.',
+    solution: 'Maquetación pixel-perfect en Elementor Pro complementada con lógica personalizada en JavaScript/CSS para llamadas a APIs y sincronización con Zoho.',
+    processSteps: [
+      { title: 'Figma to Elementor', description: 'Traducción estricta del prototipo de diseño a componentes WordPress.' },
+      { title: 'Integraciones API', description: 'Conexión con Zoho CRM, Google OAuth y lógica interactiva de cálculo.' }
+    ],
+    technologies: ['WordPress', 'Elementor Pro', 'JavaScript', 'Zoho API', 'Google API', 'CSS3'],
+    liveUrl: 'https://inversionesandinas.com/',
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/convivimos.jpeg',
+    client: 'Inversiones Andinas',
+    role: 'WordPress Developer & Mantenimiento Técnico',
+    year: '2023 - Actualidad'
+  },
+  {
+    id: 'the-dubbing-method',
+    title: 'The Dubbing Method',
+    subtitle: 'Agencia de Localización y Doblaje Profesional',
+    category: ['wordpress'],
+    categoryLabel: 'WordPress & Elementor',
+    description: 'Sitio corporativo multilingüe para agencia internacional de localización, doblaje y traducción.',
+    fullDescription: 'Plataforma institucional desarrollada en WordPress y Elementor enfocada en la captación de creadores y empresas que buscan expandirse al mercado hispanohablante.',
+    problem: 'Necesidad de un diseño global moderno que transmitiera profesionalismo técnico audiovisual ante clientes corporativos internacionales.',
+    solution: 'Desarrollo ágil en Elementor priorizando una estética limpia, presentación clara de servicios de traducción/doblaje y formularios de contacto.',
+    processSteps: [
+      { title: 'Estructuración de Servicios', description: 'Organización de líneas de doblaje, traducción y marketing digital.' },
+      { title: 'Maquetación Web', description: 'Diseño responsive y optimización de llamadas a la acción.' }
+    ],
+    technologies: ['WordPress', 'Elementor', 'PHP', 'CSS3'],
+    liveUrl: 'https://thedubbingmethod.com/',
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/thedubbingmethod.png',
+    client: 'The Dubbing Method',
+    role: 'WordPress Web Developer',
+    year: '2023'
+  },
+  {
+    id: 'cortinas-artico',
+    title: 'Cortinas Ártico',
+    subtitle: 'Catálogo y Provisión de Cortinas y Persianas',
+    category: ['wordpress'],
+    categoryLabel: 'WordPress & Elementor',
+    description: 'Sitio corporativo para empresa de provisión, colocación y recambio de todo tipo de cortinas.',
+    fullDescription: 'Sitio desarrollado en WordPress con Elementor para catálogo de cortinas metálicas, aluminio, madera y PVC, optimizado para consulta rápida de presupuesto.',
+    problem: 'Presencia digital reducida para responder a consultas sobre los diferentes materiales y servicios de instalación.',
+    solution: 'Maquetación visual enfocada en la muestra de materiales, galerías de trabajos realizados y contacto inmediato vía WhatsApp.',
+    processSteps: [
+      { title: 'Catálogo de Soluciones', description: 'Clasificación de cortinas por material (madera, PVC, metálicas, aluminio).' },
+      { title: 'Desarrollo en WordPress', description: 'Diseño accesible y adaptado para móviles.' }
+    ],
+    technologies: ['WordPress', 'Elementor', 'CSS3'],
+    liveUrl: 'https://cortinasartico.com.ar/',
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/cortinas-artico.png',
+    client: 'Cortinas Ártico',
+    role: 'WordPress Web Developer',
+    year: '2023'
+  },
+  {
+    id: 'ducati-cordoba',
+    title: 'Ducati Córdoba',
+    subtitle: 'Concesionario Oficial de Motocicletas Premium',
+    category: ['wordpress', 'maintenance'],
+    categoryLabel: 'WordPress & Automotriz',
+    description: 'Showroom digital exclusivo para concesionario oficial de motos de alta gama en Córdoba.',
+    fullDescription: 'Plataforma oficial en WordPress y Elementor Pro diseñada bajo los lineamientos de identidad visual de la marca italiana para Mundo Maipú.',
+    problem: 'Exhibir un producto de lujo requería un estándar visual exigente, con fichas de producto detalladas y estilo deportivo.',
+    solution: 'Desarrollo de catálogo visual de alto impacto con Elementor Pro, optimizando la exhibición de cada modelo y su mantenimiento continuo.',
+    processSteps: [
+      { title: 'Diseño UI Ducati', description: 'Implementación rigurosa de colores y tipografías oficiales de marca.' },
+      { title: 'Fichas de Modelos', description: 'Presentación de especificaciones técnicas y galerías fotográficas HD.' }
+    ],
+    technologies: ['WordPress', 'Elementor Pro', 'PHP', 'CSS3'],
+    liveUrl: 'https://ducaticordoba.com.ar/',
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/ducati.png',
+    client: 'Mundo Maipú',
+    agencyName: 'La Generatriz',
+    agencyUrl: 'https://www.lageneratriz.com.ar/',
+    role: 'Desarrollo & Mantenimiento Técnico',
+    year: '2023'
   }
 ];
 
