@@ -8,7 +8,7 @@ export const PROFILE_INFO = {
   location: 'Río Tercero, Córdoba, Argentina',
   email: 'villalonjonatan@gmail.com',
   phone: '+54 3571 354416',
-  linkedin: 'https://www.linkedin.com/in/jonatan-villalon-a6ba90142/',
+  linkedin: 'https://www.linkedin.com/in/jonatan-villalon/',
   github: 'https://github.com/jonatanVillalon/',
   avatarUrl: '/assets/jonatan_photo.png',
   bio: 'Desarrollador Web especializado en el ecosistema WordPress con más de 8 años de experiencia real en producción. Mi especialidad radica en la creación de temas y plugins personalizados en PHP 8, tiendas WooCommerce optimizadas para conversión, maquetación ágil con Elementor Pro, Divi y Gutenberg, y auditorías WPO avanzadas para llevar la velocidad de carga de tus sitios al score 90+ en PageSpeed Insights.',
