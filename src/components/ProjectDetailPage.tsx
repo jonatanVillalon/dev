@@ -46,9 +46,21 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({
             {/* Project Info Column */}
             <div className="lg:col-span-7 space-y-4">
               <span className="text-xs font-semibold text-gray-500 dark:text-gray-300">
-               Cliente: {project.agencyUrl ? (
-              {project.client} <a href={project.agencyUrl} target="_blank" rel="noopener noreferrer" className="underline hover:opacity-80 transition-opacity"></a>
-              ) : (project.client)} · {project.year}
+              Cliente: {project.client}
+                {project.agency && (
+                <>
+                {' (vía '}
+                <a 
+                href={project.agency.url} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="underline hover:opacity-80 transition-opacity font-medium"
+                >
+                {project.agency.name}
+                </a>
+                {')'}
+                </>
+                )} · {project.year}
               </span>
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#2F4858] dark:text-white leading-tight">
