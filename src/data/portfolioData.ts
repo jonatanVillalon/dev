@@ -187,6 +187,168 @@ export const PROJECTS_DATA: Project[] = [
     client: 'Emisolve (Chile)',
     role: 'WordPress Web Developer',
     year: '2023'
+  },
+  {
+    id: 'lf-dental',
+    title: 'LF Dental',
+    subtitle: 'Sitio Web para Centro Odontológico',
+    category: 'wordpress',
+    categoryLabel: 'WordPress & Salud',
+    description: 'Diseño web profesional y elegante para clínica odontológica integral.',
+    fullDescription: 'Desarrollo en WordPress y Elementor concebido para reflejar confianza, higiene y profesionalismo, facilitando la consulta de tratamientos dentales y vías directas de atención al paciente.',
+    problem: 'La clínica requería una identidad visual moderna y pulcra acorde a los estándares del rubro salud para captar nuevos pacientes.',
+    solution: 'Maquetación con Elementor destacando las especialidades, el equipo profesional y accesos rápidos a reserva de turnos mediante una estética limpia y clara.',
+    processSteps: [
+      { title: 'Diseño UI Salud', description: 'Paleta enfocada en generar tranquilidad y confianza médica.' },
+      { title: 'Estructuración de Servicios', description: 'Fichas claras para cada tratamiento odontológico.' }
+    ],
+    technologies: ['WordPress', 'Elementor', 'CSS3'],
+    liveUrl: 'https://lfdental.com.ar/',
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/LF-Dental.png',
+    client: 'LF Dental',
+    role: 'WordPress Web Developer',
+    year: '2024'
+  },
+  {
+    id: 'convivimos-naranja-x',
+    title: 'CONVIVIMOS Naranja X',
+    subtitle: 'Rediseño Integral de Revista Digital',
+    category: 'wordpress',
+    categoryLabel: 'WordPress Portal & Editorial',
+    description: 'Rediseño completo de la revista digital de Naranja X Argentina y optimización publicitaria.',
+    fullDescription: 'Renovación integral del portal editorial implementado sobre WordPress con el theme JNews y TagDiv, incorporando gestión avanzada de anuncios con Advanced Ads para monetización dinámica.',
+    problem: 'La plataforma editorial contaba con una maquetación desactualizada que no alineaba con el moderno ecosistema de marca de Naranja X.',
+    solution: 'Rediseño estético y funcional completo, optimizando la jerarquía de lectura de artículos, secciones temáticas y bloques de publicidad nativa.',
+    processSteps: [
+      { title: 'Rediseño UI Editorial', description: 'Adaptación a la guía de estilos moderna y dinámica de Naranja X.' },
+      { title: 'Integración Publicitaria', description: 'Configuración de espacios publicitarios optimizados mediante Advanced Ads.' }
+    ],
+    technologies: ['WordPress', 'JNews', 'TagDiv', 'Advanced Ads', 'PHP'],
+    liveUrl: 'https://convivimos.naranjax.com/',
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/convivimos.jpeg',
+    client: 'Naranja X',
+    agencyName: 'La Generatriz',
+    agencyUrl: 'https://www.lageneratriz.com.ar/',
+    role: 'WordPress Developer & Mantenimiento',
+    year: '2024'
+  },
+  {
+    id: 'org-fundicion',
+    title: 'ORG Fundición',
+    subtitle: 'Catálogo y Web para Industria Metalúrgica',
+    category: 'wordpress',
+    categoryLabel: 'WordPress & Industria',
+    description: 'Sitio corporativo y catálogo de aleaciones bajo normas técnicas SAE, ASTM y EN.',
+    fullDescription: 'Plataforma institucional para empresa metalúrgica diseñada para exhibir de manera ordenada y formal sus capacidades técnicas, normas de fabricación y catálogo de aleaciones.',
+    problem: 'La empresa contaba con una presencia digital débil que no transmitía el peso industrial ni el rigor técnico de sus procesos de fundición.',
+    solution: 'Desarrollo corporativo con Elementor enfocado en estética industrial sólida, tipografías estructuradas y tablas de especificaciones de fácil lectura.',
+    processSteps: [
+      { title: 'Enfoque Técnico', description: 'Presentación limpia de normas y aleaciones para el comprador B2B.' },
+      { title: 'Desarrollo en WordPress', description: 'Estructuración modular de las áreas de producción y formulario de contacto.' }
+    ],
+    technologies: ['WordPress', 'Elementor', 'PHP'],
+    liveUrl: 'https://orgfundicion.com/',
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/org-fundicion.png',
+    client: 'ORG Fundición',
+    role: 'WordPress Web Developer',
+    year: '2024'
+  },
+  {
+    id: 'modo-viaje',
+    title: 'Modo Viaje',
+    subtitle: 'Blog Editorial de Viajes y Turismo',
+    category: 'wordpress',
+    categoryLabel: 'WordPress & Blogging',
+    description: 'Portal de contenidos y crónicas de viajes con maquetación ágil e interactiva.',
+    fullDescription: 'Desarrollo de blog de turismo creado en WordPress con JNews y TagDiv, optimizado para destacar material fotográfico, guías de destinos y rutas turísticas.',
+    problem: 'El cliente necesitaba una plataforma atractiva que resolviera el desorden visual y ofreciera una lectura cómoda e inspiradora de cada viaje.',
+    solution: 'Diseño moderno con layouts estilo revista, tipografía enfocada en lectura prolongada y galerías inmersivas.',
+    processSteps: [
+      { title: 'Arquitectura de Categorías', description: 'Organización de contenidos por destinos, guías y experiencias.' },
+      { title: 'Maquetación JNews', description: 'Implementación de bloques dinámicos y feeds de lectura ágiles.' }
+    ],
+    technologies: ['WordPress', 'JNews', 'TagDiv', 'CSS3'],
+    liveUrl: 'https://modoviajeok.com.ar/',
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/modo-viaje.png',
+    client: 'Modo Viaje',
+    role: 'WordPress Developer & Mantenimiento',
+    year: '2024'
+  },
+  {
+    id: 'blevel',
+    title: 'BLEVEL',
+    subtitle: 'Catálogo de Carpintería de Aluminio',
+    category: 'wordpress',
+    categoryLabel: 'WordPress & Arquitectura',
+    description: 'Sitio web para fabricante e instalador de productos de carpintería de aluminio de alta gama.',
+    fullDescription: 'Plataforma moderna en WordPress y Elementor orientada a la exhibición de líneas de cerramientos y aberturas, integrando galerías de proyectos y fichas estéticas.',
+    problem: 'Necesidad de modernizar su imagen digital para alinearse con arquitectos y desarrolladores de obras de calidad superior.',
+    solution: 'Desarrollo minimalista con Elementor, priorizando acabados sobrios, visualización de obras terminadas y vías rápidas de asesoramiento técnico.',
+    processSteps: [
+      { title: 'Diseño Arquitectónico', description: 'Líneas limpias y paleta neutra que resalta la carpintería metálica.' },
+      { title: 'Implementación Web', description: 'Maquetación responsive con foco en resoluciones de alta definición.' }
+    ],
+    technologies: ['WordPress', 'Elementor', 'PHP'],
+    liveUrl: 'https://blevel.com.ar/',
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/blevel.png',
+    client: 'BLEVEL',
+    agencyName: 'La Generatriz',
+    agencyUrl: 'https://www.lageneratriz.com.ar/',
+    role: 'WordPress Web Developer',
+    year: '2024'
+  },
+  {
+    id: 'morbidelli-maipu',
+    title: 'Morbidelli Maipú',
+    subtitle: 'Showroom Digital para Marca de Motos',
+    category: 'wordpress',
+    categoryLabel: 'WordPress & Automotriz',
+    description: 'Concesionario oficial de motocicletas Morbidelli perteneciente al grupo Mundo Maipú.',
+    fullDescription: 'Plataforma de exposición de modelos donde cada motocicleta cuenta con su presentación visual, ficha técnica y punto de contacto directo para cotizaciones.',
+    problem: 'Lanzamiento de una marca nueva que precisaba una presentación de impacto visual para posicionarse en el mercado de Córdoba.',
+    solution: 'Diseño agresivo y elegante con Elementor, destacando líneas de producto, detalles de ingeniería y soporte continuo.',
+    processSteps: [
+      { title: 'Branding de Producto', description: 'Alineación con la identidad internacional de Morbidelli.' },
+      { title: 'Desarrollo & Mantenimiento', description: 'Estructuración modular de fichas técnicas y soporte mensual.' }
+    ],
+    technologies: ['WordPress', 'Elementor', 'PHP'],
+    liveUrl: 'https://morbidellimaipu.com.ar/',
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/morbidelli.png',
+    client: 'Mundo Maipú',
+    agencyName: 'La Generatriz',
+    agencyUrl: 'https://www.lageneratriz.com.ar/',
+    role: 'Desarrollo & Mantenimiento Técnico',
+    year: '2024'
+  },
+  {
+    id: 'bugliotti-desarrollos',
+    title: 'Bugliotti Desarrollos',
+    subtitle: 'Portal Inmobiliario de Desarrollos Urbanos',
+    category: 'wordpress',
+    categoryLabel: 'WordPress & Inmobiliaria',
+    description: 'Rediseño integral de sitio web para firma líder de desarrollos inmobiliarios en Córdoba.',
+    fullDescription: 'Portal corporativo orientado a inversores y compradores de departamentos de categoría, estructurado con Advanced Custom Fields (ACF) y Elementor para una gestión ágil de cada emprendimiento.',
+    problem: 'La interfaz previa resultaba desactualizada y no transmitía el prestigio, categoría y magnitud de los proyectos inmobiliarios.',
+    solution: 'Rediseño completo con acabados visuales premium, estructuración de campos ACF para galerías y avance de obras, sumado al mantenimiento evolutivo.',
+    processSteps: [
+      { title: 'Diseño Inmobiliario Premium', description: 'Línea visual enfocada en categoría, solidez y confianza financiera.' },
+      { title: 'Modelado con ACF', description: 'Campos a medida para tipologías, amenities y ubicación de emprendimientos.' }
+    ],
+    technologies: ['WordPress', 'Elementor', 'ACF', 'PHP'],
+    liveUrl: 'https://bugliottidesarrollos.com.ar/',
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/bugliotti-desarrollos.png',
+    client: 'Bugliotti Desarrollos',
+    agencyName: 'La Generatriz',
+    agencyUrl: 'https://www.lageneratriz.com.ar/',
+    role: 'Desarrollo & Mantenimiento Técnico',
+    year: '2024 - 2025'
   }
 ];
 
