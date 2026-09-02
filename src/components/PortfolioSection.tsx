@@ -11,13 +11,15 @@ interface PortfolioSectionProps {
 export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onSelectProject }) => {
   const [selectedCategory, setSelectedCategory] = useState<ProjectCategory>('all');
 
-  const categories = [
-    { id: 'all', label: 'Todos los Proyectos' },
-    { id: 'wordpress', label: 'WordPress & PHP' },
-    { id: 'react', label: 'React.js & Custom' },
-    { id: 'ecommerce', label: 'E-Commerce' },
-    { id: 'performance', label: 'Performance & WPO' },
-  ];
+const categories = [
+  { id: 'all', label: 'Todos los Proyectos' },
+  { id: 'wordpress', label: 'WordPress & PHP' },
+  { id: 'ecommerce', label: 'E-Commerce' },
+  { id: 'performance', label: 'Performance & WPO' },
+  { id: 'react', label: 'React.js & Custom' },
+  { id: 'ai', label: 'Automatización & IA' },          // <- Nueva
+  { id: 'maintenance', label: 'Mantenimiento Técnico' }  // <- Nueva
+];
 
   const filteredProjects = selectedCategory === 'all'
     ? PROJECTS_DATA
