@@ -32,7 +32,7 @@ export const PROFILE_INFO = {
 };
 
 export const PROJECTS_DATA: Project[] = [
-   {
+  {
     id: 'avistaje-rock',
     title: 'Avistaje Rock',
     subtitle: 'Sitio Web para Banda de Rock Local',
@@ -365,12 +365,12 @@ export const PROJECTS_DATA: Project[] = [
       { title: 'Maquetación Visual', description: 'Implementación con Salient Theme y WPBakery optimizada para lectura ejecutiva.' }
     ],
     technologies: ['WordPress', 'Salient Theme', 'WPBakery', 'CSS3'],
-    liveUrl: 'https://intellecta.com.ar/',[cite: 2]
+    liveUrl: 'https://intellecta.com.ar/',
     githubUrl: 'https://github.com/jonatanVillalon/',
-    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/Intellecta.png',[cite: 1]
-    client: 'Intellecta',[cite: 2]
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/Intellecta.png',
+    client: 'Intellecta',
     role: 'WordPress Web Developer',
-    year: '2025'[cite: 2]
+    year: '2025'
   },
   {
     id: 'cortinas-gulino',
@@ -386,13 +386,13 @@ export const PROJECTS_DATA: Project[] = [
       { title: 'Rediseño UI', description: 'Jerarquización de materiales, tipos de cortinas y servicios de reparación.' },
       { title: 'Cotizador a Medida', description: 'Lógica en JavaScript y CSS para personalizar la solicitud de presupuesto.' }
     ],
-    technologies: ['WordPress', 'Elementor', 'Contact Form 7', 'JavaScript', 'CSS3'],[cite: 2]
-    liveUrl: 'https://cortinasgulino.com/',[cite: 2]
+    technologies: ['WordPress', 'Elementor', 'Contact Form 7', 'JavaScript', 'CSS3'],
+    liveUrl: 'https://cortinasgulino.com/',
     githubUrl: 'https://github.com/jonatanVillalon/',
-    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/cortinas-gulino.png',[cite: 1]
-    client: 'Cortinas Gulino',[cite: 2]
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/cortinas-gulino.png',
+    client: 'Cortinas Gulino',
     role: 'WordPress Web Developer',
-    year: '2025'[cite: 2]
+    year: '2025'
   },
   {
     id: 'kove-maipu',
@@ -408,21 +408,21 @@ export const PROJECTS_DATA: Project[] = [
       { title: 'Identidad de Marca', description: 'Implementación del manual de estilo oficial y fotografía de alta resolución.' },
       { title: 'Catálogo de Fichas', description: 'Estructuración clara de prestaciones, motorizaciones y fichas técnicas.' }
     ],
-    technologies: ['WordPress', 'Elementor', 'PHP', 'CSS3'],[cite: 2]
-    liveUrl: 'https://kovemaipu.com.ar/',[cite: 2]
+    technologies: ['WordPress', 'Elementor', 'PHP', 'CSS3'],
+    liveUrl: 'https://kovemaipu.com.ar/',
     githubUrl: 'https://github.com/jonatanVillalon/',
-    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/maipu-motos.png',[cite: 1]
-    client: 'Mundo Maipú',[cite: 2]
-    agencyName: 'La Generatriz',[cite: 2]
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/maipu-motos.png',
+    client: 'Mundo Maipú',
+    agencyName: 'La Generatriz',
     agencyUrl: 'https://www.lageneratriz.com.ar/',
-    role: 'Desarrollo & Mantenimiento Técnico',[cite: 2]
-    year: '2025'[cite: 2]
+    role: 'Desarrollo & Mantenimiento Técnico',
+    year: '2025'
   },
   {
     id: 'max-nutricion-argentina',
     title: 'Máxima Nutrición Argentina',
     subtitle: 'Tienda Online de Suplementos Alimenticios',
-    category: 'ecommerce',[cite: 2]
+    category: 'ecommerce',
     categoryLabel: 'WooCommerce & WordPress',
     description: 'E-commerce especializado en nutrición deportiva, suplementos dietarios y vida saludable.',
     fullDescription: 'Tienda construida sobre WordPress y WooCommerce con maquetación en Elementor, optimizada para compras rápidas en móviles y organización por objetivos deportivos.',
@@ -432,19 +432,19 @@ export const PROJECTS_DATA: Project[] = [
       { title: 'Arquitectura de Catálogo', description: 'Categorización por objetivos deportivos, marcas y presentaciones.' },
       { title: 'Desarrollo WooCommerce', description: 'Optimización de pasarelas de pago y diseño responsive en Elementor.' }
     ],
-    technologies: ['WordPress', 'WooCommerce', 'Elementor', 'PHP'],[cite: 2]
-    liveUrl: 'https://maxnutricionargentina.com/',[cite: 2]
+    technologies: ['WordPress', 'WooCommerce', 'Elementor', 'PHP'],
+    liveUrl: 'https://maxnutricionargentina.com/',
     githubUrl: 'https://github.com/jonatanVillalon/',
-    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/max-nutricion-argentina.jpeg',[cite: 1]
-    client: 'Máxima Nutrición Argentina',[cite: 2]
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/max-nutricion-argentina.jpeg',
+    client: 'Máxima Nutrición Argentina',
     role: 'WooCommerce Web Developer',
-    year: '2026'[cite: 2]
+    year: '2026'
   },
   {
     id: 'pimesa-sa',
     title: 'PIME SA',
     subtitle: 'E-Commerce de Materiales Eléctricos e Iluminación',
-    category: 'ecommerce',[cite: 2]
+    category: 'ecommerce',
     categoryLabel: 'WooCommerce & WordPress',
     description: 'Tienda online mayorista y minorista de insumos eléctricos con catálogo industrial.',
     fullDescription: 'Desarrollo integral de plataforma de comercio electrónico con WordPress, WooCommerce y Elementor para catálogo de materiales eléctricos, cables y componentes industriales.',
@@ -454,13 +454,13 @@ export const PROJECTS_DATA: Project[] = [
       { title: 'Estructuración de Inventario', description: 'Jerarquía clara para miles de referencias de materiales eléctricos.' },
       { title: 'Implementación E-commerce', description: 'Configuración de WooCommerce optimizada para velocidad y filtros.' }
     ],
-    technologies: ['WordPress', 'WooCommerce', 'Elementor', 'PHP'],[cite: 2]
+    technologies: ['WordPress', 'WooCommerce', 'Elementor', 'PHP'],
     liveUrl: 'https://pimesa.com.ar/',
     githubUrl: 'https://github.com/jonatanVillalon/',
-    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/pime-sa.png',[cite: 1]
-    client: 'PIME SA',[cite: 2]
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/pime-sa.png',
+    client: 'PIME SA',
     role: 'WooCommerce Web Developer',
-    year: '2026'[cite: 2]
+    year: '2026'
   },
   {
     id: 'en-redaccion',
@@ -479,10 +479,10 @@ export const PROJECTS_DATA: Project[] = [
     technologies: ['WordPress', 'PHP', 'MySQL', 'WPO Specialist'],
     liveUrl: 'https://enredaccion.com.ar/',
     githubUrl: 'https://github.com/jonatanVillalon/',
-    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/EnRedaccion.png',[cite: 1]
-    client: 'En Redacción',[cite: 2]
-    role: 'Mantenimiento Técnico WordPress',[cite: 2]
-    year: '2022 - Actualidad'[cite: 2]
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/EnRedaccion.png',
+    client: 'En Redacción',
+    role: 'Mantenimiento Técnico WordPress',
+    year: '2022 - Actualidad'
   },
   {
     id: 'chatbot-whatsapp-ai',
@@ -501,7 +501,7 @@ export const PROJECTS_DATA: Project[] = [
     technologies: ['n8n', 'Evolution API', 'Gemini API', 'Docker / VPS', 'JavaScript', 'REST APIs'],
     liveUrl: '',
     githubUrl: 'https://github.com/jonatanVillalon/',
-    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/chatbot-whatsapp.png',[cite: 1]
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/chatbot-whatsapp.png',
     client: 'Proyecto Propio / Automatizaciones',
     role: 'AI & Automation Developer',
     year: '2026'
@@ -526,23 +526,24 @@ export const SKILLS_DATA: Skill[] = [
   // Frontend
   { name: 'HTML5, CSS3 & SASS / Tailwind', category: 'frontend', categoryLabel: 'Front-End Development', level: 98, yearsExperience: '8 Años', icon: 'Palette', description: 'Maquetación semántica, Flexbox, Grid, CSS para WordPress y diseño responsivo adaptativo.' },
   { name: 'JavaScript ES6+ / React.js', category: 'frontend', categoryLabel: 'Front-End Development', level: 88, yearsExperience: '4 Años', icon: 'Atom', description: 'Interactividad dinámica, Headless WordPress API, consumo de endpoints y utilidades frontend.' },
-  // IA & Mantenimiento
+
+  // Soporte & IA
   { 
     name: 'Mantenimiento Técnico & Soporte WP', 
     category: 'tools', 
     categoryLabel: 'WPO, Servidores & SEO', 
     level: 98, 
     yearsExperience: '8 Años', 
-    icon: 'ShieldCheck', // Asumiendo que usas Lucide Icons o similar
+    icon: 'Cpu', 
     description: 'Gestión integral mensual, actualizaciones preventivas de core y plugins, copias de seguridad y monitoreo de estabilidad para sitios de alto tráfico.' 
   },
   { 
     name: 'Automatización & Chatbots IA (n8n, Gemini)', 
     category: 'backend', 
-    categoryLabel: 'Automatización & IA', 
+    categoryLabel: 'Especialidad WordPress & Backend', 
     level: 90, 
     yearsExperience: '1 Año', 
-    icon: 'Bot', 
+    icon: 'Server', 
     description: 'Creación de flujos de trabajo automatizados con n8n, despliegue de Evolution API en servidores VPS y desarrollo de chatbots personalizados para WhatsApp impulsados por la API de Gemini.', 
     featured: true 
   }
