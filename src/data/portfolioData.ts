@@ -349,6 +349,162 @@ export const PROJECTS_DATA: Project[] = [
     agencyUrl: 'https://www.lageneratriz.com.ar/',
     role: 'Desarrollo & Mantenimiento Técnico',
     year: '2024 - 2025'
+  },
+  {
+    id: 'intellecta',
+    title: 'Intellecta',
+    subtitle: 'Consultoría y Asesoramiento Corporativo',
+    category: 'wordpress',
+    categoryLabel: 'WordPress & Consultoría',
+    description: 'Diseño integral de plataforma institucional para consultora de procesos y valor empresarial.',
+    fullDescription: 'Desarrollo web corporativo sobre WordPress con Salient Theme y WPBakery, concebido para transmitir rigor estratégico, innovación y metodología en la profesionalización de empresas.',
+    problem: 'La firma requería una presencia digital sobria y sofisticada que respaldara servicios de consultoría estratégica de alto nivel ante directivos y accionistas.',
+    solution: 'Maquetación con diseño sobrio y tipografías claras, destacando casos de éxito, metodologías de trabajo y canales ágiles de contacto.',
+    processSteps: [
+      { title: 'Estructura Corporativa', description: 'Organización de áreas de asesoramiento y metodología de consultoría.' },
+      { title: 'Maquetación Visual', description: 'Implementación con Salient Theme y WPBakery optimizada para lectura ejecutiva.' }
+    ],
+    technologies: ['WordPress', 'Salient Theme', 'WPBakery', 'CSS3'],
+    liveUrl: 'https://intellecta.com.ar/',[cite: 2]
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/Intellecta.png',[cite: 1]
+    client: 'Intellecta',[cite: 2]
+    role: 'WordPress Web Developer',
+    year: '2025'[cite: 2]
+  },
+  {
+    id: 'cortinas-gulino',
+    title: 'Cortinas Gulino',
+    subtitle: 'Catálogo y Cotizador para Persianas y Cortinas',
+    category: 'wordpress',
+    categoryLabel: 'WordPress & Elementor',
+    description: 'Rediseño web completo con formulario dinámico de cotización en Contact Form 7, CSS y JS.',
+    fullDescription: 'Modernización visual y funcional del sitio para empresa dedicada a la provisión, instalación y reparación de cortinas y persianas, optimizando la captación de prospectos.',
+    problem: 'La plataforma previa tenía un diseño desactualizado que limitaba la tasa de consultas y no guiaba al usuario según el tipo de persiana requerida.',
+    solution: 'Rediseño estético total con Elementor e implementación de formulario de cotización guiado mediante JavaScript y Contact Form 7.',
+    processSteps: [
+      { title: 'Rediseño UI', description: 'Jerarquización de materiales, tipos de cortinas y servicios de reparación.' },
+      { title: 'Cotizador a Medida', description: 'Lógica en JavaScript y CSS para personalizar la solicitud de presupuesto.' }
+    ],
+    technologies: ['WordPress', 'Elementor', 'Contact Form 7', 'JavaScript', 'CSS3'],[cite: 2]
+    liveUrl: 'https://cortinasgulino.com/',[cite: 2]
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/cortinas-gulino.png',[cite: 1]
+    client: 'Cortinas Gulino',[cite: 2]
+    role: 'WordPress Web Developer',
+    year: '2025'[cite: 2]
+  },
+  {
+    id: 'kove-maipu',
+    title: 'Kove Maipú',
+    subtitle: 'Catálogo Digital Oficial KOVE Motores',
+    category: 'wordpress',
+    categoryLabel: 'WordPress & Automotriz',
+    description: 'Sitio web y catálogo institucional para concesionario oficial de la marca KOVE en Córdoba.',
+    fullDescription: 'Desarrollo sobre WordPress con Elementor adaptado a las directrices visuales internacionales de la marca KOVE, enfocado en mostrar prestaciones de aventura y competición.',
+    problem: 'Necesidad de lanzar la marca localmente con un catálogo dinámico y visualmente potente que facilitara la solicitud de presupuestos.',
+    solution: 'Maquetación deportiva y elegante con fichas detalladas por modelo, puntos de contacto directo y mantenimiento técnico evolutivo.',
+    processSteps: [
+      { title: 'Identidad de Marca', description: 'Implementación del manual de estilo oficial y fotografía de alta resolución.' },
+      { title: 'Catálogo de Fichas', description: 'Estructuración clara de prestaciones, motorizaciones y fichas técnicas.' }
+    ],
+    technologies: ['WordPress', 'Elementor', 'PHP', 'CSS3'],[cite: 2]
+    liveUrl: 'https://kovemaipu.com.ar/',[cite: 2]
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/maipu-motos.png',[cite: 1]
+    client: 'Mundo Maipú',[cite: 2]
+    agencyName: 'La Generatriz',[cite: 2]
+    agencyUrl: 'https://www.lageneratriz.com.ar/',
+    role: 'Desarrollo & Mantenimiento Técnico',[cite: 2]
+    year: '2025'[cite: 2]
+  },
+  {
+    id: 'max-nutricion-argentina',
+    title: 'Máxima Nutrición Argentina',
+    subtitle: 'Tienda Online de Suplementos Alimenticios',
+    category: 'ecommerce',[cite: 2]
+    categoryLabel: 'WooCommerce & WordPress',
+    description: 'E-commerce especializado en nutrición deportiva, suplementos dietarios y vida saludable.',
+    fullDescription: 'Tienda construida sobre WordPress y WooCommerce con maquetación en Elementor, optimizada para compras rápidas en móviles y organización por objetivos deportivos.',
+    problem: 'Ausencia de un canal de venta online ordenado, con catálogo categorizado y flujo de checkout directo para productos de consumo masivo.',
+    solution: 'Desarrollo e-commerce completo con filtros por tipo de suplemento, pasarela de pago integrada y diseño enfocado en conversión.',
+    processSteps: [
+      { title: 'Arquitectura de Catálogo', description: 'Categorización por objetivos deportivos, marcas y presentaciones.' },
+      { title: 'Desarrollo WooCommerce', description: 'Optimización de pasarelas de pago y diseño responsive en Elementor.' }
+    ],
+    technologies: ['WordPress', 'WooCommerce', 'Elementor', 'PHP'],[cite: 2]
+    liveUrl: 'https://maxnutricionargentina.com/',[cite: 2]
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/max-nutricion-argentina.jpeg',[cite: 1]
+    client: 'Máxima Nutrición Argentina',[cite: 2]
+    role: 'WooCommerce Web Developer',
+    year: '2026'[cite: 2]
+  },
+  {
+    id: 'pimesa-sa',
+    title: 'PIME SA',
+    subtitle: 'E-Commerce de Materiales Eléctricos e Iluminación',
+    category: 'ecommerce',[cite: 2]
+    categoryLabel: 'WooCommerce & WordPress',
+    description: 'Tienda online mayorista y minorista de insumos eléctricos con catálogo industrial.',
+    fullDescription: 'Desarrollo integral de plataforma de comercio electrónico con WordPress, WooCommerce y Elementor para catálogo de materiales eléctricos, cables y componentes industriales.',
+    problem: 'Catálogo extenso y técnico difícil de explorar y cotizar por instaladores, constructoras y usuarios finales.',
+    solution: 'E-commerce estructurado con fichas técnicas descargables, filtros de producto por especificaciones y carrito ágil de cotización.',
+    processSteps: [
+      { title: 'Estructuración de Inventario', description: 'Jerarquía clara para miles de referencias de materiales eléctricos.' },
+      { title: 'Implementación E-commerce', description: 'Configuración de WooCommerce optimizada para velocidad y filtros.' }
+    ],
+    technologies: ['WordPress', 'WooCommerce', 'Elementor', 'PHP'],[cite: 2]
+    liveUrl: 'https://pimesa.com.ar/',
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/pime-sa.png',[cite: 1]
+    client: 'PIME SA',[cite: 2]
+    role: 'WooCommerce Web Developer',
+    year: '2026'[cite: 2]
+  },
+  {
+    id: 'en-redaccion',
+    title: 'En Redacción',
+    subtitle: 'Soporte y Mantenimiento de Portal Periodístico',
+    category: 'wordpress',
+    categoryLabel: 'WordPress & Periódicos',
+    description: 'Mantenimiento técnico continuo, estabilidad de servidor y soporte para medio digital de noticias.',
+    fullDescription: 'Gestión técnica y soporte en producción para portal informativo con alto volumen de publicaciones diarias, preservando la continuidad del servicio frente a picos de tráfico.',
+    problem: 'Riesgo constante de caídas de servicio, fallos en plugins y degradación de rendimiento ante coberturas de noticias de última hora.',
+    solution: 'Protocolo de soporte mensual preventivo, actualizaciones seguras en staging, depuración de base de datos y optimización continua de cache.',
+    processSteps: [
+      { title: 'Auditoría Inicial', description: 'Revisión de plugins conflictivos y sobrecarga en wp_options.' },
+      { title: 'Soporte Preventivo', description: 'Monitoreo de uptime, copias de seguridad automatizadas y parches de seguridad.' }
+    ],
+    technologies: ['WordPress', 'PHP', 'MySQL', 'WPO Specialist'],
+    liveUrl: 'https://enredaccion.com.ar/',
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/EnRedaccion.png',[cite: 1]
+    client: 'En Redacción',[cite: 2]
+    role: 'Mantenimiento Técnico WordPress',[cite: 2]
+    year: '2022 - Actualidad'[cite: 2]
+  },
+  {
+    id: 'chatbot-whatsapp-ai',
+    title: 'Chatbot Inteligente WhatsApp & n8n',
+    subtitle: 'Automatización Conversacional con LLM y APIs',
+    category: 'react',
+    categoryLabel: 'Automatización & IA',
+    description: 'Asistente conversacional automatizado para WhatsApp integrado con n8n, Evolution API y modelos Gemini.',
+    fullDescription: 'Arquitectura de automatización basada en agentes IA conectados a WhatsApp mediante Evolution API y orquestados a través de flujos en n8n, capaz de atender consultas, calificar leads y consultar datos en tiempo real.',
+    problem: 'Pérdida de consultas comerciales fuera de horario y demoras en la respuesta inicial a través de canales de mensajería.',
+    solution: 'Despliegue de un bot conversacional con contexto de negocio que interpreta intenciones en lenguaje natural y deriva contactos calificados.',
+    processSteps: [
+      { title: 'Despliegue de Infraestructura', description: 'Instalación y configuración de Evolution API en VPS dedicado.' },
+      { title: 'Flujos en n8n & Prompting', description: 'Diseño de la lógica de enrutamiento y conexión con Gemini API.' }
+    ],
+    technologies: ['n8n', 'Evolution API', 'Gemini API', 'Docker / VPS', 'JavaScript', 'REST APIs'],
+    liveUrl: '',
+    githubUrl: 'https://github.com/jonatanVillalon/',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/chatbot-whatsapp.png',[cite: 1]
+    client: 'Proyecto Propio / Automatizaciones',
+    role: 'AI & Automation Developer',
+    year: '2026'
   }
 ];
 
