@@ -459,6 +459,8 @@ export const PROJECTS_DATA: Project[] = [
     githubUrl: 'https://github.com/jonatanVillalon/',
     imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/pime-sa.png',
     client: 'PIME SA',
+    agencyName: 'La Generatriz',
+    agencyUrl: 'https://www.lageneratriz.com.ar/',
     role: 'WooCommerce Web Developer',
     year: '2026'
   },
