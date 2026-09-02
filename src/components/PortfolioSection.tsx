@@ -21,9 +21,13 @@ const categories = [
   { id: 'maintenance', label: 'Mantenimiento Técnico' }  // <- Nueva
 ];
 
-  const filteredProjects = selectedCategory === 'all'
-    ? PROJECTS_DATA
-    : PROJECTS_DATA.filter((p) => p.category === selectedCategory);
+const filteredProjects = selectedCategory === 'all'
+  ? projects
+  : projects.filter((project) =>
+      Array.isArray(project.category)
+        ? (project.category as string[]).includes(selectedCategory)
+        : project.category === selectedCategory
+    );
 
   return (
     <section id="portfolio" className="py-20 bg-white dark:bg-[#2F4858] transition-colors relative">
