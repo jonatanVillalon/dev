@@ -22,11 +22,11 @@ const categories = [
 ];
 
 const filteredProjects = selectedCategory === 'all'
-  ? projects
-  : projects.filter((project) =>
-      Array.isArray(project.category)
-        ? (project.category as string[]).includes(selectedCategory)
-        : project.category === selectedCategory
+  ? PROJECTS_DATA
+  : PROJECTS_DATA.filter((p) =>
+      Array.isArray(p.category)
+        ? (p.category as string[]).includes(selectedCategory)
+        : p.category === selectedCategory
     );
 
   return (

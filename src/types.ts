@@ -1,4 +1,4 @@
-export type ProjectCategory = 'wordpress' | 'react' | 'ecommerce' | 'performance' | 'ai' | 'maintenance';
+export type ProjectCategory = 'all' | 'wordpress' | 'react' | 'ecommerce' | 'performance' | 'ai' | 'maintenance';
 
 export interface ProjectProcessStep {
   title: string;
