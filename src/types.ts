@@ -26,7 +26,10 @@ export interface Project {
     value: string;
   }[];
   client: string;
-  agencyUrl?: string; // <- Agregada como opcional
+  agency?: {
+    name: string;
+    url: string;
+  };
   role: string;
   year: string;
   featured?: boolean;
