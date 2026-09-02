@@ -23,11 +23,12 @@ const categories = [
 
 const filteredProjects = selectedCategory === 'all'
   ? PROJECTS_DATA
-  : PROJECTS_DATA.filter((p) =>
-      Array.isArray(p.category)
+  : PROJECTS_DATA.filter((p) => {
+      if (!p.category) return false;
+      return Array.isArray(p.category)
         ? (p.category as string[]).includes(selectedCategory)
-        : p.category === selectedCategory
-    );
+        : p.category === selectedCategory;
+    });
 
   return (
     <section id="portfolio" className="py-20 bg-white dark:bg-[#2F4858] transition-colors relative">
