@@ -597,7 +597,7 @@ export const PROJECTS_DATA: Project[] = [
     technologies: ['WordPress', 'Elementor Pro', 'JavaScript', 'Zoho API', 'Google API', 'CSS3'],
     liveUrl: 'https://inversionesandinas.com/',
     githubUrl: 'https://github.com/jonatanVillalon/',
-    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/convivimos.jpeg',
+    imageUrl: 'https://raw.githubusercontent.com/jonatanVillalon/dev/main/assets/inversiones-andinas.png',
     client: 'Inversiones Andinas',
     role: 'WordPress Developer & Mantenimiento Técnico',
     year: '2023 - Actualidad'
